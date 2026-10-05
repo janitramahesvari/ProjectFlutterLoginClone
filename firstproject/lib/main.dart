@@ -1,8 +1,13 @@
-import 'package:firstproject/kalkulator_page.dart';
+import 'package:firstproject/kalkulator_page09.dart';
+import 'package:firstproject/pages/kalkulator_page1.dart';
 import 'package:firstproject/pages/login_clonepage.dart';
+import 'package:firstproject/routes09.dart';
+import 'package:firstproject/pages09/kalkulator_pagee.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
 import 'login_page.dart';
-import 'kalkulator_page.dart';
+import 'kalkulator_page09.dart';
 import 'login_clone.dart';
 
 void main() {
@@ -15,8 +20,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return GetMaterialApp(
+      title: 'My Learning App',
+      initialRoute: Routes09.registration,
+      getPages:Routes09.mypages,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -35,11 +42,11 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-     // home: LoginPage(),
+      // home: LoginPage(),
       //home: KalkulatorPage(),
-     // home: LoginClone(),
-     home:LoginClonePage()
+      // home: LoginClone(),
+      //home: KalkulatorPagee(),
+      // home:KalkulatorPage1()
     );
   }
 }
-

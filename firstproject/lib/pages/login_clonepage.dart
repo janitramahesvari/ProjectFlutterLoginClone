@@ -19,13 +19,15 @@ class LoginClonePage extends StatelessWidget {
      return Scaffold(
       appBar: AppBar( title: Text("Login Clone Page")),
       body: Column(children: [
-       Loginclonelogo(), 
+       Loginclonelogo(imagelogo:'asset/googlelogo.webp'),
 
         SizedBox(height: 15),
 
         
-        Loginclonejudul(),
-        Loginclonetxtrichspan(),
+        Loginclonejudul(text:"login"),
+         //dibuat di 1 class yg bisa dipanggil di 1 halaman
+        Loginclonetxtrichspan (textspan1:  "Gunakan Akun Google Anda. Akun akan ditambahkan ke perangkat ini dan tersedia untuk aplikasi Google lainnya.",
+        textspan2:  "\nPelajari lebih lanjut cara menggunakan akun \n anda"),
           
       SizedBox(height: 25),
       Padding(

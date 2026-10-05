@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Loginclonetxtfield extends StatelessWidget {
-final TextEditingController txtController;
+final TextEditingController txtController; //nyimpen input
 final String myHint;
 
   const Loginclonetxtfield({
